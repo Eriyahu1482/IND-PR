@@ -29,7 +29,7 @@ namespace IND_PR.View.Pages
 
         private void Exercises_Click(object sender, MouseButtonEventArgs e)
         {
-
+            MessageBox.Show("ЗАГЛУШКА");
         }
 
         private void Close_Click(object sender, MouseButtonEventArgs e)

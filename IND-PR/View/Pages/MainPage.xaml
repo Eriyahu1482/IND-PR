@@ -12,14 +12,22 @@
         <Grid>
             <Image Source="/Images/Background.jpg"
                    Stretch="UniformToFill"/>
-            <Border
-                Height="580"
+            <Border  Height="407"
                 Width="200"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
-                Margin="10"
                 CornerRadius="15"
-                Background="Transparent">
+                Background="White"
+                Opacity="0.7"
+                BorderBrush="Black"
+                BorderThickness="1"></Border>
+            <Border
+                Height="388"
+                Width="200"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                CornerRadius="15"
+                Background="Transparent" >
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.25*"/>
@@ -27,27 +35,27 @@
                         <RowDefinition Height="0.25*"/>
                         <RowDefinition Height="0.25*"/>
                     </Grid.RowDefinitions>
-                    <Border  Background="White" CornerRadius="15" Width="180" Margin="9,39,9,56" BorderBrush="Black" BorderThickness="1">
+                    <Border  Background="White" CornerRadius="15" Width="180" Height="35" BorderBrush="Black" BorderThickness="1">
                         <Grid Margin="0,0,0,4">
                             <TextBlock Style="{StaticResource MText}" MouseDown="Exercises_Click" Text="Упражнения" Width="110" Height="22"/>
                         </Grid>
                     </Border>
-                    <Border Background="White" Width="180" Margin="9,40,9,55" Grid.Row="1" CornerRadius="15" BorderBrush="Black" BorderThickness="1">
+                    <Border Background="White" Width="180" Height="35" Grid.Row="1" CornerRadius="15" BorderBrush="Black" BorderThickness="1">
                         <Grid>
                             <TextBlock Style="{StaticResource MText}" MouseDown="Exercises_Click" Text="Таймер" Height="22" Width="65" />
                         </Grid>
                     </Border>
-                    <Border Background="White" Width="180" Margin="9,47,9,48" CornerRadius="15"  Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                    <Border Background="White" Width="180" Height="35" CornerRadius="15"  Grid.Row="2" BorderBrush="Black" BorderThickness="1">
                         <Grid Margin="0,-1,0,0">
                             <TextBlock Style="{StaticResource MText}" MouseDown="Exercises_Click" Text="Таблица лидеров" Width="168" Height="22"/>
                         </Grid>
                     </Border>
-                    <Border Background="White" Width="180" Margin="9,47,9,48" CornerRadius="15"  Grid.Row="3" BorderBrush="Black" BorderThickness="1">
-                <Grid Margin="0,-1,0,0">
-                    <TextBlock Style="{StaticResource MText}" MouseDown="Close_Click" Text="Выйти" Width="56" Height="30"/>
+                    <Border Background="White" Width="180" Height="35" CornerRadius="15"  Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                        <Grid Margin="0,-1,0,0">
+                            <TextBlock Style="{StaticResource MText}" MouseDown="Close_Click" Text="Выйти" Width="56" Height="24"/>
+                        </Grid>
+                    </Border>
                 </Grid>
-            </Border>
-        </Grid>
             </Border>
         </Grid>
     </Border>
